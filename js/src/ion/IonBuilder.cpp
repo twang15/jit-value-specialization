@@ -562,7 +562,7 @@ IonBuilder::initParameters()
     current->add(param);
     current->initSlot(info().thisSlot(), param);
 
-    if(js_IonOptions.ps){
+    if(js_IonOptions.ps && !script->isParameterSpecialized){
     	this->functionCalls = 0;
         ParameterSpecialization ps(cx, script);
 

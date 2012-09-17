@@ -47,7 +47,7 @@ flags[7]="--ion-ps --ion-cp --ion-linv --ion-dcec --ion-bce"
 
 # For each suite, we must specify the respective number of executions.
 suites[0]="sunspider-1.0"
-run[0]=300
+run[0]=5000
 
 # Results file.
 # It must be an absoute path.
@@ -118,8 +118,5 @@ done;
 
 # Generate results.
 python generate-output.py $outPath $outFormat
-
-# Show missing tests.
-python reveal-missing-tests.py
 
 rm $errorOutPath

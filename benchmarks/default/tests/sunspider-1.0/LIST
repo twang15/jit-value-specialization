@@ -10,6 +10,7 @@ bitops_bits_in_byte
 bitops_bitwise_and
 bitops_nsieve_bits
 controlflow_recursive
+crypto_aes
 crypto_md5
 crypto_sha1
 date_format_tofte
